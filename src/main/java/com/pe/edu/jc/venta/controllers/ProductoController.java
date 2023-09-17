@@ -8,8 +8,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+import static com.pe.edu.jc.venta.controllers.apis.Apis.PRODUCTOS_API;
+
+
 @RestController
-@RequestMapping("/api/productos")
+@RequestMapping(PRODUCTOS_API)
 public class ProductoController {
 
     @Autowired

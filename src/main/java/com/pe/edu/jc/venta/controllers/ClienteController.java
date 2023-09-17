@@ -7,8 +7,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+import static com.pe.edu.jc.venta.controllers.apis.Apis.CLIENTE_API;
+
 @RestController
-@RequestMapping("/clientes")
+@RequestMapping(CLIENTE_API)
 public class ClienteController {
 
     @Autowired
