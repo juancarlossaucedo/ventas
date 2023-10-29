@@ -18,11 +18,13 @@ public class ClienteController {
 
     @GetMapping
     public List<Cliente> buscarTodosLosClientes() {
+
         return clienteService.buscarTodosLosClientes();
     }
 
     @PostMapping
     public Cliente crearCliente(@RequestBody Cliente cliente) {
+
         return clienteService.crearCliente(cliente);
     }
 

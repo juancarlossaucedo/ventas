@@ -11,7 +11,9 @@ import lombok.*;
 public class Producto {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "producto_seq")
+    @SequenceGenerator(name = "producto_seq", sequenceName = "producto_sequence", allocationSize = 1)
+
     @Column(name = "id")
     private Integer id;
 

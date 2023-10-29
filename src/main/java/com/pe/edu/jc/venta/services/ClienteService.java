@@ -13,6 +13,7 @@ public class ClienteService {
     private final ClienteRepository clienteRepository;
 
     public ClienteService(ClienteRepository clienteRepository) {
+
         this.clienteRepository = clienteRepository;
     }
 
@@ -21,6 +22,7 @@ public class ClienteService {
     }
 
     public Cliente buscarClientePorId(Integer id) {
+
         return clienteRepository.findById(id).orElse(null);
     }
 

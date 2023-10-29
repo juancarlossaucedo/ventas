@@ -1,10 +1,14 @@
 package com.pe.edu.jc.venta.services;
 
+
+
 import com.pe.edu.jc.venta.models.Detalle;
 import com.pe.edu.jc.venta.repository.DetalleRepository;
 import org.springframework.stereotype.Service;
 
+
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class DetalleService {
@@ -16,6 +20,7 @@ public class DetalleService {
     }
 
     public Detalle crearDetalle(Detalle detalle) {
+
         return detalleRepository.save(detalle);
     }
 
